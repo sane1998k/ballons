@@ -1,0 +1,97 @@
+.wrapper {
+	height: 100%;
+	overflow: hidden;
+}
+
+
+
+.head__text {
+	display: flex; 
+	justify-content: center;
+	background-color: #0B6FA4; 
+	padding: 10px;
+}
+
+.head__text a {
+	text-align: center; 
+	font-size: 35px; 
+	text-decoration: none; 
+	color: #fff;
+}
+
+.container {
+	max-width: 300px;
+	margin: 0 auto;
+}
+
+.head__text {
+	text-align: center;
+}
+
+.main__body {
+	text-align: center;
+}
+
+.main__body p {
+	font-weight: 700;
+	text-align: center; font-size: 35px; text-decoration: none; display: block;color: #000; margin: 10px;
+}
+
+.main__row {
+	display: flex;
+	flex-direction: column;
+}
+
+.form {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+
+.button5 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+background-color: #0B6FA4;
+color: white;
+margin-top: 10px;
+padding-top: 10px;
+text-align: center;
+height: 60px;
+/* border: 2px solid #555555; */
+border-radius: 5px;
+font-size: 20px;
+width: 100%;
+}
+
+.button5:hover {
+background-color: #ddd;
+color: black;
+}
+
+input[type="button"]:hover {
+  border: 0;
+  outline: none;
+  box-shadow: 0 0 10px rgba(10, 10, 10, 0.4);
+}
+
+input[type="button"]:active {
+  border: 0;
+  box-shadow: 0 0 10px rgba(10, 10, 10, 0.4);
+}
+
+
+ input[type=text], #nameselect2 {
+width: 100%;
+height: 60px;
+padding: 4px 18px;
+margin: 8px 0;
+display: inline-block;
+border: 1px solid #ccc;
+border-radius: 4px;
+box-sizing: border-box;
+text-align: left;
+font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+font-size: 20px;
+}

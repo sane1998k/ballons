@@ -1,0 +1,28 @@
+<html>
+
+<head>
+    <link data-require="bootstrap@*" data-semver="3.3.2" rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" />
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+    <script>
+        $(function() {
+            var dmJSON = "three.json";
+            $.getJSON(dmJSON, function(data) {
+                console.log(data)
+                $.each(data.records, function(i, f) {
+                    var table = '<table class="table table-bordered">';
+                    table += "<tr><td>" + f.Clue + "</td><td>" + f.Answer + "</td><td>" + f.Status + "</td><td> " + f.Views + "</td></tr>";
+                    table += "</table>";
+                    $('.profile').append(table);
+                });
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="profile"></div>
+    </div>
+</body>
+
+</html>
